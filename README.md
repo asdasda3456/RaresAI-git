@@ -1,4 +1,4 @@
-# RaresAI-git
+# RaresAI
 
 **Important:** RaresAI is currently in its early stages of development. Please help improve it by reporting any bugs you encounter.
 
