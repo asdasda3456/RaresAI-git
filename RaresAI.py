@@ -1,5 +1,6 @@
 import random
 from difflib import get_close_matches
+from date_helper import DateHelper
 
 class RaresAi:
     def __init__(self):
@@ -443,6 +444,8 @@ class RaresAi:
             return random.choice(self.about_me_templates)
         elif phrase.lower() in ["what version are you", "what version are you?","which version are you?","which version are you"]:
             return self.version
+        elif phrase.lower() in ["what's the date?", "current date", "today's date"]:
+            return f"The current date is {DateHelper.get_current_date()}."v
         
         # Split the input phrase into individual words
         words = phrase.strip().lower().split()
